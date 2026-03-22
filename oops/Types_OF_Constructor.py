@@ -1,8 +1,8 @@
 class Student:
-    def __init__(self,name,cgpa):
+    def __init__(self,name,cgpa): #paramertized
         self.name=name
         self.cgpa=cgpa
-    def get_cgpa(self):
+    def get_cgpa(self): #defult 
         return self.cgpa
     Subject="python"
     College="Abc"
