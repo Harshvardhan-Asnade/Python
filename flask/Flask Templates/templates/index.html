@@ -1,4 +1,19 @@
-<link rel="stylesheet" href="static/style.css">
-<h1>Welcome to Flask Website</h1>
-<h1>Hello {{name}}</h1>
-<p>This section introduces Flask for web development, explains why it is called a micro web framework, compares it with Django and shows how to install Flask on Windows to start building web applications.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sylesheet" href="{{ url_for('static', filename='') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>First Flask App</title>
+</head>
+<body>
+    <h1>Welcome {{name}} to my website </h1
+    
+    <button><a href="/contact">Contact</a></button>
+        <button><a href="/about">About</a></button>
+  <br>
+  <br>
+    <img src="{{ url_for('static', filename='luffy.png') }}" alt="Image" width="300">
+</body>
+</html>
